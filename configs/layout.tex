@@ -1,0 +1,58 @@
+% 布局设置
+
+% 使用geometry宏包管理页面布局
+\geometry{
+    a4paper,
+    marginpar=0pt,
+    % 横向与纵向间距（细则中有规定）
+    vmargin={3.5cm, 3.5cm},
+    hmargin={2.5cm, 2.5cm},
+    % 页眉到正文的间距
+    headsep=1.0cm,
+    % 调试页面布局时使用（效果是绘制出页面各项目边框）
+    % showframe
+}
+
+% 页眉页脚相关
+% 无页眉页脚（适用于封面页、独创性声明页）
+\fancypagestyle{cover}
+{
+    \fancyhead{}
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+}
+% 适用于正文、参考文献的样式，使用阿拉伯数字表示页码
+\fancypagestyle{body}
+{
+    \fancyhead{}
+    \fancyhead[L]{\zihao{-5} 中国传媒大学硕士学位论文}
+    \fancyhead[R]{\zihao{-5} \leftmark}
+    \renewcommand{\headrulewidth}{0.6pt}
+
+    % 注意切换下面两句以区分单双面打印
+    % C表示居中
+    % \fancyfoot[C]{\zihao{-5} \thepage}
+    % OR表示奇数页居右，EL表示偶数页居左（下同）
+    \fancyfoot[OR,EL]{\zihao{-5} \thepage}
+}
+% 适用于致谢、摘要、目录部分，使用罗马数字表示页码
+\fancypagestyle{previous}
+{
+    \fancyhead{}
+    \fancyhead[L]{\zihao{-5} 中国传媒大学硕士学位论文}
+    \fancyhead[R]{\zihao{-5} \leftmark}
+    \renewcommand{\headrulewidth}{0.6pt}
+
+    % 注意切换下面两句以区分单双面打印
+    % \fancyfoot[C]{\zihao{-5}\Roman{page}}
+    \fancyfoot[OR,EL]{\zihao{-5}\Roman{page}}
+}
+% 覆盖默认的plain样式
+\fancypagestyle{plain}
+{
+    \fancyhead{}
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+\let\cleardoublepage\clearpage

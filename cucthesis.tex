@@ -1,0 +1,33 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[]{cucthesis}
+
+\begin{document}
+
+% 封面
+\input{pages/cover.tex}
+% 独创性声明
+\input{pages/auth-claim.tex}
+% 致谢
+\input{pages/thanksto.tex}
+% 中文摘要
+\input{pages/abstract-chn.tex}
+% 英文摘要
+\input{pages/abstract-eng.tex}
+% 目录（目录、图表目录）
+\input{pages/toc.tex}
+
+% 正文从奇数页码开始
+\cleardoublepage
+% 布局样式设置
+\assignpagestyle{\chapter}{body}
+\pagestyle{body}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+% 下面为正文章节，如果可以请放置在chapters文件夹中，便于寻找
+\input{chapters/1.tex}
+
+% 参考文献
+\input{pages/reference.tex}
+
+\end{document}

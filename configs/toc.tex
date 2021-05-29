@@ -1,0 +1,70 @@
+% 目录设置
+
+% 设置章节计数到3级标题（subsubsection）
+% \setcounter{secnumdepth}{3}
+% 设置目录深度到3级标题（subsubsection）
+% \setcounter{tocdepth}{2}
+
+% 设置toc宏包中“目录”、“表目录”、“图目录”的中文
+\renewcommand{\contentsname}{目录}
+\renewcommand{\listfigurename}{图目录}
+\renewcommand{\listtablename}{表目录}
+
+% 每章节的图表目录之间是否存在间隙，如需要请注释
+\renewcommand*{\addvspace}[1]{}
+
+% 目录标题设置
+\renewcommand{\cfttoctitlefont}{\hfill\zihao{3}\bfseries}\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\zihao{3}\bfseries}\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\zihao{3}\bfseries}\renewcommand{\cftafterlottitle}{\hfill}
+
+\setlength{\cftbeforetoctitleskip}{0pt}
+\setlength{\cftaftertoctitleskip}{0pt}
+
+\setlength{\cftbeforeloftitleskip}{0pt}
+\setlength{\cftafterloftitleskip}{0pt}
+
+\setlength{\cftbeforelottitleskip}{0pt}
+\setlength{\cftafterlottitleskip}{0pt}
+
+% 目录页各级字体
+\renewcommand{\cftchapfont}         {\zihao{4}\heiti}
+\renewcommand{\cftchapleader}       {\cftdotfill{\cftchapdotsep}}
+\renewcommand{\cftchappagefont}     {}
+\renewcommand{\cftsecfont}          {\zihao{-4}\heiti}
+\renewcommand{\cftsubsecfont}       {\zihao{-4}\songti}
+\renewcommand{\cftsubsubsecfont}    {\zihao{-4}\songti}
+
+% 目录项后到页码之间“.”的间隔
+\renewcommand{\cftfigdotsep}        {0.5}
+\renewcommand{\cfttabdotsep}        {0.5}
+\renewcommand{\cftchapdotsep}       {0.5}
+\renewcommand{\cftsecdotsep}        {0.5}
+\renewcommand{\cftsubsecdotsep}     {0.5}
+\renewcommand{\cftsubsubsecdotsep}  {0.5}
+
+% 目录页数字部分与标题部分对齐宽度（譬如：3.2.1宽度标题，如果序号过大，可适当增加宽度） 
+\renewcommand{\cftchapnumwidth}       {3em}
+\renewcommand{\cftsecnumwidth}        {3em}
+\renewcommand{\cftsubsecnumwidth}     {3em}
+\renewcommand{\cftsubsubsecnumwidth}  {3em}
+
+% 设置图目录左边距、序号与文字的间距
+\cftsetindents{figure}{0em}{2em}
+\cftsetindents{table}{0em}{2em}
+
+% 目录页各级缩进
+\setlength{\cftchapindent}      {0em}
+\setlength{\cftsecindent}       {0em}
+\setlength{\cftsubsecindent}    {0em}
+\setlength{\cftsubsubsecindent} {0em}
+\setlength{\cftbeforechapskip}  {0em}
+
+% 目录页书签设置（跳转到指定章节）
+\bookmarksetup{
+  numbered,
+  open
+}
+
+% 目录页样式
+\tocloftpagestyle{previous}

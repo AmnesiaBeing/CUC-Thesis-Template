@@ -1,0 +1,10 @@
+% 关于表格的一些通用性设置
+
+% 设置tabularx表格垂直居中
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+
+% 设置表格默认字体样式（建议统一所有图表的字体大小）
+% 不建议使用这个方法，建议每个表格均自行设置字体
+%! 此方法可能导致某些表格样式出现问题，如有需要请注释下面两行，然后手动为所有表格添加样式
+% \BeforeBeginEnvironment{tabular}{\songti \zihao{5}}
+% \BeforeBeginEnvironment{tabularx}{\songti \zihao{5}}

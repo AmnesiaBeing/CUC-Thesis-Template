@@ -1,0 +1,81 @@
+% 封面页
+
+% 设置当前页面布局无页眉页脚
+\pagestyle{cover}
+\thispagestyle{cover}
+
+% 单独设置封面页的页边距
+\newgeometry{left=2.5cm,right=2.5cm,top=2cm,bottom=2cm}
+
+% 请注意填写以下信息
+\begin{center}
+    \zihao{-4} \songti
+    \begin{tabularx}{\textwidth}{l p{3.5cm} >{\raggedleft}X p{3.5cm}}
+        分类号：           & \uline{\hfill 分类号 \hfill}   &
+        单位代码：         & \uline{\hfill 10033 \hfill}      \\
+        密{\quad}级：      & \uline{\hfill 一般为空 \hfill} &
+        学{\quad\quad}号： & \uline{\hfill 学号 \hfill}
+    \end{tabularx}
+\end{center}
+
+\vspace{16pt}
+
+\begin{center}
+    \includegraphics[width=0.3\paperwidth]{logo/name.png}
+\end{center}
+
+\vspace{-14pt}
+
+\begin{center}
+    \zihao{-1} \songti
+    % 如有需求，请更改
+    硕士学位论文
+\end{center}
+
+\vspace{30pt}
+
+\begin{center}
+    \includegraphics[width=0.15\paperwidth]{logo/cuc.png}
+\end{center}
+
+% 垂直间距，如有需要，酌情修改
+\vspace{32pt}
+
+\begin{center}
+    \zihao{-2} \bfseries
+    \begin{tabularx}{1.0\textwidth}{>{\songti}l X<{\centering }}
+        % 如果标题过长，请模仿下文中格式拓展行数
+        中文论文题目： & \uline{\hfill \songti 基于LaTex的硕士研究生 \hfill}           \\
+                       & \uline{\hfill \songti 毕业论文模板的设计与实现 \hfill}        \\
+        \\
+        英文论文题目： & \uline{\hfill A Thesis Template Based On \hfill}      \\
+                       & \uline{\hfill LaTex Design and Implementation \hfill}
+    \end{tabularx}
+\end{center}
+
+% 垂直间距，如有需要，酌情修改
+\vspace{50pt}
+
+% 注意手动填写以下信息
+\begin{center}
+    \zihao{4} \songti
+    \begin{tabularx}{.6\textwidth}{>{\songti}l >{\songti}X<{\centering}}
+        申请人姓名： & \bfseries \uline{\hfill 张三 \hfill}        \\
+        指导教师：   & \bfseries \uline{\hfill 李四 \hfill} \hfill \\
+        专业名称：   & \uline{\hfill 王麻子 \hfill}                \\
+        研究方向：   & \uline{\hfill 研究方向 \hfill}              \\
+        所在学院：   & \uline{\hfill 新媒体研究院 \hfill}          \\
+    \end{tabularx}
+\end{center}
+
+% 垂直间距，如有需要，酌情修改
+\vspace{40pt}
+
+\begin{center}
+    \zihao{-3} \bfseries
+    \begin{tabularx}{.5\textwidth}{>{\songti}l >{\songti}X<{\centering}}
+        论文提交日期 & \uline{\hfill 202X年6月 \hfill}
+    \end{tabularx}
+\end{center}
+
+\restoregeometry

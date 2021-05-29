@@ -1,0 +1,29 @@
+% 首先引用这个文件，其余配置信息在具体文件中具体配置
+% 该文件中包含大部分需要包含的功能包
+
+\usepackage{geometry} % 布局
+\usepackage{hyperref}      % 超链接
+\usepackage{listings}      % 代码块
+\usepackage{courier}       % 字体
+\usepackage{fontspec}      % 字体
+\usepackage{fancyhdr}      % 页眉页脚相关宏包
+% 如果使用subfigure包，需要切换注释行
+\usepackage{tocloft} % 目录
+% \usepackage[subfigure]{tocloft} % 目录
+\usepackage{amsmath,amsthm,amsfonts,amssymb,bm} %数学
+\usepackage{graphicx}      % 图片
+\usepackage{longtable,booktabs,tabularx} % 表格
+\usepackage{ulem} % 下划线
+\usepackage{multido} % 多次执行命令
+\usepackage{titlesec} % 多级标题样式设置
+\usepackage{bookmark} % 书签（目录页可跳转链接等）
+\usepackage{pdfpages} % 插入pdf
+\usepackage{subfig} % 使用子图
+\usepackage{threeparttable} % 使用表格注释
+\usepackage{diagbox} % 使用表格表头斜线分区
+
+% 参考文献宏包，可能需要注意设置问题
+\usepackage[
+    style=gb7714-2015,
+    % gbnamefmt=lowercase, % 引用外文论文作者名字是否需要小写
+]{biblatex}

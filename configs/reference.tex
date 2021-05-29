@@ -1,0 +1,15 @@
+% 设置参考文献标题样式
+\defbibheading{bibliography}[参考文献]{
+    \phantomsection
+    \addcontentsline{toc}{chapter}{参考文献}
+    \markboth{参考文献}{参考文献}
+    \chapter*{\centerline{参\ 考\ 文\ 献}}
+}
+
+% 设置bib文件路径
+\bibliography{bib/reference.bib}
+
+% 参考文献布局
+\setlength{\bibitemsep}{0ex}
+\setlength{\bibnamesep}{0ex}
+\setlength{\bibinitsep}{0ex}

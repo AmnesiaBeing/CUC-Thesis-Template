@@ -1,0 +1,39 @@
+% ctex包中关于多级标题的设定
+\ctexset
+{
+    % 此处设定根据细则修改而成
+    chapter =
+        {
+            format=\raggedright\zihao{3}\heiti,
+            name={},
+            number=\arabic{chapter},
+            beforeskip=6pt,
+            afterskip=6pt
+        },
+    section =
+        {
+            format=\raggedright\heiti\zihao{4},
+            name={},
+            number=\arabic{chapter}.\arabic{section},
+            beforeskip=13pt,
+            afterskip=13pt
+        },
+    subsection =
+        {
+            format=\raggedright\zihao{-4},
+            name={},
+            number=\arabic{chapter}.\arabic{section}.\arabic{subsection},
+            beforeskip=13pt,
+            afterskip=13pt
+        },
+    subsubsection =
+        {
+            format=\raggedright\zihao{-4},
+            name={},
+            aftername=~,
+            numbering=true,
+            number=\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection},
+            beforeskip=0pt,
+            afterskip=0pt
+        }
+}
