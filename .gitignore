@@ -251,3 +251,6 @@ TSWLatexianTemp*
 
 # 论文细则后缀名为pdf，设置.gitignore不忽略此文件
 !/中国传媒大学论文要求.pdf
+
+# 示例文件
+!/示例.pdf
