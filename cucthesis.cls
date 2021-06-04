@@ -6,7 +6,11 @@
 
 \PassOptionsToPackage{no-math}{fontspec}
 \PassOptionsToPackage{AutoFakeBold}{xeCJK}
-\LoadClass[a4paper,11pt,twoside,fontset = fandol,UTF8]{ctexbook}
+\LoadClass[
+    zihao=-4,
+    UTF8,
+    twoside
+]{ctexrep}
 
 \input{configs/packages.tex}
 \input{configs/toc.tex}
