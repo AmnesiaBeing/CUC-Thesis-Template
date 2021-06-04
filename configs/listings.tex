@@ -1,19 +1,21 @@
 % 该文件设置代码块的样式
 
-% 设置等宽字体为FiraCode，存放在fonts字体目录下
-\setmonofont{FiraCode-Regular}
+% 等宽字体样式可选
+% \setmonofont{FiraCode}
+\setmonofont{Consolas}
 
 % 设置代码块样式
 \lstset{
-    basicstyle=\footnotesize\ttfamily,  % 基本风格
-    numbers=left,                       % 设置行号显示在左侧
-    numbersep=10pt,                     % 设置行号与代码块方框间隔 
-    tabsize=2,                          % 设置代码块缩进宽度
-    extendedchars=true,                 % 让listings包支持扩展字符，以防止意外错误编码
-    breaklines=true,                    % 自动换行
-    frame=leftline,                     % 框架左边竖线
-    xleftmargin=19pt,                   % 竖线左边间距
-    % showspaces=false,                 % 空格字符加下划线
-    % showstringspaces=false,           % 字符串中的空格加下划线
-    % showtabs=false,                   % 字符串中的tab加下划线
+    columns=fixed,
+    basicstyle=\footnotesize\ttfamily,                   % 设置字体      
+    numbers=left,                                        % 在左侧显示行号
+    keywordstyle=\color[RGB]{40,40,255},                 % 关键字样式
+    numberstyle=\footnotesize\color{black},              % 行号样式
+    commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
+    stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+    showstringspaces=false,                              % 不显示字符串中的空格
+    frame=shadowbox,                                     % 边框样式
+    breaklines=true,                                     % 换行相关
+    breakatwhitespace=true,                              % 换行相关
+    language=c++,                                        % 默认语言（可高亮显示关键字）
 }
