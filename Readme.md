@@ -40,6 +40,7 @@
 │   └── toc.tex             目录设置
 ├── cucthesis.cls           cls模板文件
 ├── cucthesis.tex           模板主入口（增删章节后需要在这里修改）
+├── cucthesis-detail-abstract.tex 详细摘要主入口（主要内容只是封面页和详细摘要）
 ├── figures                 图片文件
 │   ├── blackwhite          黑白图片
 │   └── colorful            彩色图片
@@ -49,7 +50,9 @@
 │   ├── abstract-chn.tex    中文摘要
 │   ├── abstract-eng.tex    英文摘要
 │   ├── auth-claim.tex      原创性声明
+│   ├── cover-detail-abstract.tex 详细摘要封面
 │   ├── cover.tex           封面
+│   ├── detail-abstract.tex 详细摘要内容
 │   ├── reference.tex       参考文献
 │   ├── thanksto.tex        致谢
 │   └── toc.tex             目录

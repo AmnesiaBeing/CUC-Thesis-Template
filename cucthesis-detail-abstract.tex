@@ -1,0 +1,25 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[]{cucthesis}
+
+\begin{document}
+
+% 详细摘要封面
+\input{pages/cover-detail-abstract.tex}
+
+% 正文从奇数页码开始
+\cleardoublepage
+% 布局样式设置
+\assignpagestyle{\chapter}{body}
+\pagestyle{body}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% 重新定义题注序号
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+\renewcommand{\theequation}{\arabic{equation}}
+
+\input{pages/detail-abstract.tex}
+
+\end{document}
