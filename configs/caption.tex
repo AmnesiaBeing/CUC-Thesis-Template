@@ -3,11 +3,10 @@
 % 设置一种题注的样式，5号宋体加粗（细则中并没有对此进行规定）
 \DeclareCaptionFont{captionfont}{\zihao{5}\bfseries\songti}
 
-% 设置图、表、代码块题注使用captionfont样式
-\captionsetup[figure]{font=captionfont}
-\captionsetup[table]{font=captionfont}
-\captionsetup[lstlisting]{font=captionfont}
-
+% 设置图、表、代码块题注使用captionfont样式，并且使用空格作为分隔符
+\captionsetup[figure]{font=captionfont,labelsep=space}
+\captionsetup[table]{font=captionfont,labelsep=space}
+\captionsetup[lstlisting]{font=captionfont,labelsep=space}
 
 % `position` doesn't actually set the caption position,
 % It only determines weather the `skip` inserted above/below `caption`
